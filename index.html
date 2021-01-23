@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  background-image: url('bg.jpg');
+  font-family: 'Josefin Sans', sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+* {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .navbar {
+            font-size: 18px;
+            
+          
+            padding-bottom: 10px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: white;
+            text-shadow: 1px 5px 5px black;
+            font-weight: bold;
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+                margin-left: 15rem;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+        .mainline h1{
+            font-size: 4.5rem;
+            color: cornsilk;
+            text-shadow: 1px 5px 5px black;
+            padding-top: 5.6rem;
+            padding-left: 5rem;
+        }
+        .par p{
+            color: cornsilk;
+            text-shadow: 1px 5px 5px black;
+            font-size: 1.2rem; 
+            padding-left: 7rem;
+            padding-top: 1rem;
+        }
+        .button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 7rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">logo</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Products</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Contact Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Blog</a>
+            </li>
+        </ul>
+    </nav>
+
+<div class="mainline">
+    <h1 >Plan Your Holiday Trip <br>
+        Now Exceptional<br>
+        Adeventure.<br>
+    </h1>
+</div>   
+<div class="par">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been 
+        the industry's standard dummy text ever since the 1500s.<br> when an unknown printer took a galley of type. </p>
+</div>
+<div class="btn">
+    <button onclick="document.location='default.asp'" class="button button1">Click Here For Booking</button>
+</div>
+   <script>
+
+   </script>
+</body>
+</html>
